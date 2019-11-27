@@ -98,7 +98,7 @@ function getCustomer (id, quote) {
 
   var options = {
     method: 'GET',
-    url:  simproUrl + '/api/v1.0/companies/0/customers/companies/' + id + '?columns=ID,Email,CompanyName,Tags,Phone',
+    url:  simproUrl + '/api/v1.0/companies/0/customers/companies/' + id + '?columns=ID,Email,CompanyName,Tags,Phone,Profile',
     headers:
     {
       Authorization: 'Bearer ' + simproApiKey,
@@ -167,7 +167,7 @@ function getCustomerIndividual (id, quote) {
 
   var options = {
     method: 'GET',
-    url: simproUrl + '/api/v1.0/companies/0/customers/individuals/' + id + '?columns=Email,GivenName,FamilyName,Tags,CellPhone',
+    url: simproUrl + '/api/v1.0/companies/0/customers/individuals/' + id + '?columns=Email,GivenName,FamilyName,Tags,CellPhone,Profile',
     headers:
     {
       Authorization: 'Bearer ' + simproApiKey,
