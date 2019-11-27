@@ -19,7 +19,7 @@ function getQuotes () {
     headers:
     {
       Authorization: 'Bearer ' + simproApiKey,
-      'Content-Type': 'application/json', 
+      'Content-Type': 'application/json',
       'accept': 'application/json'
     }
   };
